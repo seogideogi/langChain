@@ -60,7 +60,7 @@ def get_vectorstore(_docs):
 @st.cache_resource
 def initialize_components(selected_model):
     #file_path = r"C:\Users\lee.eunjeong\Downloads\대한민국헌법(헌법)(제00010호)(19880225).pdf"
-    file_path = r"../data/대한민국헌법(헌법)(제00010호)(19880225).pdf"
+    file_path = r"./data/대한민국헌법(헌법)(제00010호)(19880225).pdf"
     pages = load_and_split_pdf(file_path)
     vectorstore = get_vectorstore(pages)
     retriever = vectorstore.as_retriever()
