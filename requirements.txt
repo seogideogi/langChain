@@ -20,7 +20,7 @@ unstructured
 unstructured[pdf]
 
 python-pptx
-pip install --upgrade pip
+--upgrade pip
 
 
 faiss-cpu
