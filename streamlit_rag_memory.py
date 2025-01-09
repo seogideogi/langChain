@@ -11,7 +11,10 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories.streamlit import StreamlitChatMessageHistory
 from langchain_core.output_parsers import StrOutputParser
+
+
 ## 6.5 에서 의존성 문제 괸련 추가 코드
+__import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
